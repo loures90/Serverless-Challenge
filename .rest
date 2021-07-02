@@ -1,0 +1,31 @@
+POST http://localhost:3003/employee/
+Content-Type: application/json
+
+{
+	"name": "José",
+	"age": 22,
+	"position": "vendedor"
+}
+####
+GET http://localhost:3003/employee/
+
+####
+
+GET http://localhost:3003/employee/3de8cccf-c820-4d41-a495-3e0f5f04ed52
+
+####
+
+PATCH http://localhost:3003/employee/3de8cccf-c820-4d41-a495-3e0f5f04ed52
+Content-Type: application/json
+
+{
+	"name": "João",
+	"age": 40,
+	"position": "Pedreiro"
+}
+####
+
+DELETE  http://localhost:3003/employee/3de8cccf-c820-4d41-a495-3e0f5f04ed52
+Content-Type: application/json
+
+####
